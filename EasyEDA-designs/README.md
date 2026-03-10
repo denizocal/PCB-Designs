@@ -99,7 +99,7 @@ Bu tasarım aşağıdaki sistemlerde kullanılabilecek altyapıya sahiptir:
 
 ![Ana Şematik](schematic-easyEDA2.png)
 
-![RFID Okuyucu Kartı](3D-view-rfid.png)
+![RFID Okuyucu Kartı](3D-view-rfid.jpeg)
 
 ## Geliştirme Potansiyeli
 
