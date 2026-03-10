@@ -25,6 +25,6 @@ Bu proje, Arduino Nano geliştirme kartının PCB tasarımını içermektedir.
 
 ## Görseller
 
-- `schematic.png`
-- `pcb-layout.png`
-- `3d-view.png`
+![Sematik](arduino-nano-schematic.jpeg)
+![3D view](arduino-nano-3d.jpeg)
+![3D view bottom](arduino-nano-bottom.jpeg)
