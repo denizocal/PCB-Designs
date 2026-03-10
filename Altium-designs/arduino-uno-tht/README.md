@@ -28,6 +28,6 @@ Bu proje, manuel montaj ve prototipleme süreçlerini kolaylaştırmak amacıyla
 
 ## Görseller
 
-- schematic.png
-- pcb-layout.png
-- 3d-view.png
+![GPS veri okuma](Altium-designs/arduino-uno-tht/schematic-arduino-THT.jpeg)
+![İlk Harita Goruntusu](images/ilk-harita-goruntusu.png)
+![Yaris Pisti](images/yaris-pisti.png)
