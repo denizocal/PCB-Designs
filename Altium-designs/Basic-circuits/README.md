@@ -16,6 +16,9 @@ Bu klasör, temel PCB tasarım prensiplerini uygulamalı olarak geliştirmek ama
 
 ## Görseller
 
-- `schematic.png`
-- `pcb-layout.png`
-- `3d-view.png`
+![pcb](pcb1.jpeg)
+![pcb](pcb2.jpeg)
+![pcb](pcb3.jpeg)
+![pcb](pcb4.jpeg)
+![pcb](pcb5.jpeg)
+
