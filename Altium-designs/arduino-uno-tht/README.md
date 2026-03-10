@@ -29,5 +29,5 @@ Bu proje, manuel montaj ve prototipleme süreçlerini kolaylaştırmak amacıyla
 ## Görseller
 
 ![Sematik](schematic-arduino-THT.jpeg)
-![İlk Harita Goruntusu](images/ilk-harita-goruntusu.png)
-![Yaris Pisti](images/yaris-pisti.png)
+![3D view](3D-view-arduino-tht.jpeg)
+![PCB](pcb-arduino-tht.jpeg)
