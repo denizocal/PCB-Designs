@@ -1,24 +1,23 @@
-# Temel PCB Devre Tasarımları
+# Basic PCB Circuit Designs
 
-Bu klasör, temel PCB tasarım prensiplerini uygulamalı olarak geliştirmek amacıyla hazırlanmış küçük ölçekli PCB projelerini içermektedir.
+This folder contains small-scale PCB projects for practicing fundamental board-design principles.
 
-## Odaklanılan Alanlar
+## Areas of Focus
 
-- Bileşen konumlandırma stratejileri
-- Sinyal yönlendirme teknikleri
-- Güç ve toprak düzlemi yerleşimi
-- PCB tasarım kurallarının anlaşılması
-- Altium Designer ile uygulamalı tasarım becerilerinin geliştirilmesi
+- Component placement strategies
+- Signal-routing techniques
+- Power and ground plane layout
+- PCB design rules
+- Practical design work in Altium Designer
 
-## Kullanılan Araçlar
+## Design Tool
 
 - Altium Designer
 
-## Görseller
+## Project Images
 
-![pcb](pcb1.jpeg)
-![pcb](pcb2.jpeg)
-![pcb](pcb3.jpeg)
-![pcb](pcb4.jpeg)
-![pcb](pcb5.jpeg)
-
+![PCB design 1](pcb1.jpeg)
+![PCB design 2](pcb2.jpeg)
+![PCB design 3](pcb3.jpeg)
+![PCB design 4](pcb4.jpeg)
+![PCB design 5](pcb5.jpeg)
