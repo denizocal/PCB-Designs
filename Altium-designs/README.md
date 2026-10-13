@@ -1,33 +1,35 @@
-# Altium PCB Tasarımları
+# Altium PCB Designs
 
-Bu klasör, Altium Designer kullanılarak geliştirilen PCB projelerini içermektedir.  
-Temel amaç; şematik çizim, PCB yerleşimi ve mikrodenetleyici kart mimarisi konularında uygulamalı deneyim kazanmaktır.
+This folder contains PCB projects created with Altium Designer. The projects provide hands-on practice with schematic capture, PCB layout, and microcontroller-board architecture.
 
-## Projeler
+## Projects
 
-### Arduino Uno THT Versiyonu
-Arduino Uno kartının, manuel montaj ve prototipleme süreçlerini kolaylaştırmak amacıyla through-hole bileşenler kullanılarak hazırlanmış versiyonudur.
+### Arduino Uno THT Version
 
-### Arduino Nano PCB Tasarımı
-Arduino Nano geliştirme kartının, kompakt bileşen yerleşimi ve mikrodenetleyici kart mimarisine odaklanılarak hazırlanmış PCB tasarımıdır.
+An Arduino Uno-compatible board designed with through-hole components to make manual assembly and prototyping easier.
 
-### Temel Devre Tasarımları
-Yönlendirme, topraklama ve bileşen yerleşimi gibi temel PCB tasarım prensiplerini geliştirmek amacıyla oluşturulmuş küçük ölçekli PCB projelerinden oluşmaktadır.
+### Arduino Nano PCB Design
 
-## Odaklanılan Alanlar
+A PCB design for an Arduino Nano-compatible development board, focused on compact component placement and microcontroller-board architecture.
 
-- Şematik tasarım ve çizim
-- PCB yerleşimi ve yönlendirme
-- Bileşen konumlandırma stratejileri
-- Güç ve toprak düzlemi tasarımı
-- 3D PCB görselleştirme
+### Basic Circuit Designs
 
-## Klasör Yapısı
+A collection of small PCB projects for practicing fundamentals such as routing, grounding, and component placement.
 
-Her proje, kendi klasörü içinde aşağıdaki içeriklerle birlikte sunulmaktadır:
+## Areas of Focus
 
-- `README.md`
-- `schematic.png`
-- `pcb-layout.png`
-- `3D` görselleri
-- Proje dosyaları (Altium proje dosyaları)
+- Schematic design and capture
+- PCB layout and routing
+- Component placement strategies
+- Power and ground plane design
+- 3D PCB visualization
+
+## Folder Structure
+
+Each project is organized in its own folder and may include:
+
+- A README file
+- Schematic images
+- PCB layout images
+- 3D views
+- Altium project files
