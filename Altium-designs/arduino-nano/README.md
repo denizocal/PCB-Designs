@@ -1,30 +1,30 @@
-# Arduino Nano PCB Tasarımı
+# Arduino Nano PCB Design
 
-Bu proje, Arduino Nano geliştirme kartının PCB tasarımını içermektedir.
+This project contains a PCB design for an Arduino Nano-compatible development board.
 
-## Özellikler
+## Features
 
-- ATmega328P mikrodenetleyici
-- Arduino Nano uyumlu pin dizilimi
-- SMD ve through-hole (THT) bileşenlerin birlikte kullanımı
-- USB - Seri haberleşme arayüzü
-- 5V gerilim regülasyonu
+- ATmega328P microcontroller
+- Arduino Nano-compatible pinout
+- A combination of SMD and through-hole (THT) components
+- USB-to-serial communication interface
+- 5 V voltage regulation
 
-## Tasarım Amaçları
+## Design Goals
 
-- Arduino Nano kartının iç mimarisini anlamak
-- Küçük boyutlu kartlar için PCB yerleşim teknikleri üzerinde pratik yapmak
-- Kompakt tasarımlarda bileşen konumlandırma stratejisini öğrenmek
-- Altium Designer kullanarak uygulamalı tasarım becerilerini geliştirmek
+- Understand the internal architecture of an Arduino Nano
+- Practice PCB layout techniques for small boards
+- Learn component-placement strategies for compact designs
+- Develop practical PCB design skills in Altium Designer
 
-## Kullanılan Araçlar
+## Tools and References
 
 - Altium Designer
-- ATmega328P veri sayfası
-- Arduino Nano referans şematiği
+- ATmega328P datasheet
+- Arduino Nano reference schematic
 
-## Görseller
+## Project Images
 
-![Sematik](arduino-nano-schematic.jpeg)
-![3D view](arduino-nano-3d.jpeg)
-![3D view bottom](arduino-nano-bottom.jpeg)
+![Schematic](arduino-nano-schematic.jpeg)
+![3D board view](arduino-nano-3d.jpeg)
+![3D board view from below](arduino-nano-bottom.jpeg)
