@@ -1,28 +1,26 @@
-# PCB Tasarımları
+# PCB Designs
 
-Bu depo, elektronik donanım tasarımı alanında teknik yetkinliğimi geliştirmek amacıyla hazırladığım baskı devre kartı (PCB) projelerini içermektedir.
+This repository contains printed circuit board (PCB) projects I created to develop my skills in electronic hardware design.
 
-Projeler; mikrodenetleyici kartları, devre prototipleri ve çeşitli donanım modüllerinden oluşmakta olup farklı elektronik tasarım otomasyonu (EDA) yazılımları kullanılarak geliştirilmiştir.
+The projects include microcontroller boards, circuit prototypes, and hardware modules designed with different electronic design automation (EDA) tools.
 
-Bu çalışmaların temel amacı; şematik çizim, PCB yerleşimi, yönlendirme ve donanım mimarisi konularında uygulamalı deneyim kazanmak ve tasarım becerilerini geliştirmektir.
+They provide hands-on practice with schematic capture, PCB layout, routing, and hardware architecture.
 
-## Kullanılan Tasarım Araçları
+## Design Tools
 
-Bu depodaki projeler, kullanılan PCB tasarım yazılımlarına göre düzenlenmiştir:
+Projects are organized by the PCB design software used:
 
-- **Altium Designer** – Daha kapsamlı kart tasarımları, mikrodenetleyici tabanlı sistemler ve profesyonel PCB geliştirme süreçleri için kullanılmıştır.
-- **EasyEDA** – Hızlı prototipleme, temel devre tasarımları ve küçük ölçekli donanım projeleri için kullanılmıştır.
+- **Altium Designer** — Used for more detailed board designs, microcontroller-based systems, and professional PCB development workflows.
+- **EasyEDA** — Used for rapid prototyping, basic circuit designs, and smaller hardware projects.
 
-## Odaklanılan Alanlar
+## Areas of Focus
 
-Bu projeler kapsamında aşağıdaki alanlarda uygulamalı deneyim kazanılması hedeflenmiştir:
+- Schematic design
+- PCB layout and routing
+- Component placement strategies
+- Power and ground design
+- Hardware prototyping
 
-- Şematik tasarım
-- PCB yerleşimi ve yönlendirme
-- Bileşen konumlandırma stratejileri
-- Güç ve toprak hatlarının tasarımı
-- Donanım prototipleme süreci
+## Repository Structure
 
-## Depo Yapısı
-
-Her alt klasör, belirli bir tasarım aracı kullanılarak geliştirilen PCB projelerini temsil etmektedir. Alt klasörler içinde ilgili projelere ait açıklamalar, görseller ve teknik içerikler yer almaktadır.
+Each subfolder contains PCB projects created with a particular design tool. Project descriptions, images, and technical files are organized within the relevant folders.
