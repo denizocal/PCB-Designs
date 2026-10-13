@@ -1,33 +1,33 @@
-# Arduino Uno THT Versiyonu
+# Arduino Uno THT Version
 
-Bu proje, manuel montaj ve prototipleme süreçlerini kolaylaştırmak amacıyla tasarlanmış, Arduino Uno kartının through-hole (THT) bileşenlere sahip bir versiyonudur.
+This project is a through-hole (THT) version of an Arduino Uno-compatible board, designed to make manual assembly and prototyping easier.
 
-> **Not:** Bu kart, donanımsal bir kopya olarak tasarlanmıştır. Kart üzerinde kullanılan ATmega328P mikrodenetleyicisinin, harici bir Arduino kartı veya bootloader kullanılarak önceden programlanmış olması gerekmektedir. Bu karta doğrudan kod yüklemek mümkün değildir.
+> **Note:** This board is designed as a hardware-compatible clone. The ATmega328P microcontroller must be programmed beforehand using another Arduino board or a bootloader programmer. Code cannot be uploaded directly to this board.
 
-## Özellikler
+## Features
 
-- ATmega328P mikrodenetleyici (önceden programlanmış)
-- Arduino Uno uyumlu pin dizilimi
-- Kolay lehimleme için through-hole bileşenler
-- USB - Seri haberleşme arayüzü
-- 5V gerilim regülasyonu
+- ATmega328P microcontroller (pre-programmed)
+- Arduino Uno-compatible pinout
+- Through-hole components for easier soldering
+- USB-to-serial communication interface
+- 5 V voltage regulation
 
-## Tasarım Amaçları
+## Design Goals
 
-- Mikrodenetleyici kart mimarisini öğrenmek
-- PCB yönlendirme ve bileşen yerleşimi konusunda pratik yapmak
-- Güç ve toprak hatlarının tasarım mantığını anlamak
-- Through-hole tabanlı kart montajında uygulamalı beceri geliştirmek
-- Kart üzerinde programlama özelliği bulunmayan, işlevsel bir Arduino uyumlu kart tasarlamak
+- Learn microcontroller-board architecture
+- Practice PCB routing and component placement
+- Understand power and ground design
+- Gain hands-on experience assembling a through-hole board
+- Design a functional Arduino-compatible board without on-board programming capability
 
-## Kullanılan Araçlar
+## Tools and References
 
 - Altium Designer
-- ATmega328P veri sayfası
-- Arduino Uno referans şematiği
+- ATmega328P datasheet
+- Arduino Uno reference schematic
 
-## Görseller
+## Project Images
 
-![Sematik](schematic-arduino-THT.jpeg)
-![3D view](3D-view-arduino-tht.jpeg)
+![Schematic](schematic-arduino-THT.jpeg)
+![3D board view](3D-view-arduino-tht.jpeg)
 ![PCB](pcb-arduino-tht.jpeg)
