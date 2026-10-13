@@ -1,119 +1,109 @@
-# ESP32 Tabanlı RFID Kontrol Sistemi
+# ESP32-Based RFID Control System
 
-Bu proje, ESP32 tabanlı bir RFID kontrol sistemi tasarımını içermektedir. Sistem; RFID kart okuma, kullanıcı bilgilendirme, röle kontrolü ve ekran üzerinden durum gösterimi işlevlerini tek bir donanım yapısı üzerinde birleştirmek amacıyla geliştirilmiştir.
+This project contains a hardware design for an ESP32-based RFID control system. It brings together RFID card reading, user notifications, relay control, and status display in a single design.
 
-Proje kapsamında güç yönetimi, mikrodenetleyici bağlantıları, RFID haberleşmesi, LCD ekran entegrasyonu, röle sürme devresi ve sesli/görsel bildirim yapısı birlikte ele alınmıştır.
+The design covers power management, microcontroller connections, RFID communication, LCD integration, relay driving, and audio-visual notifications.
 
-## Proje Özeti
+## Project Overview
 
-Bu tasarım, RFID kart veya etiket okutulduğunda ilgili bilgiyi işleyebilen, kullanıcıya ekran ve bildirim elemanları üzerinden geri dönüş verebilen ve gerekli durumda röle çıkışı ile harici bir yükü kontrol edebilen gömülü bir sistem altyapısı sunmaktadır.
+The system is designed to process an RFID card or tag, provide feedback through a display and notification components, and control an external load through a relay output when required.
 
-Sistem, özellikle erişim kontrolü, yetkilendirme, akıllı kilit, kartlı geçiş veya benzeri otomasyon uygulamalarına uygun bir donanım yapısı oluşturmak amacıyla hazırlanmıştır.
+Its hardware architecture is suited to access control, authorization, smart-lock, card-entry, and similar automation applications.
 
-## Sistem Bileşenleri
+## Main System Blocks
 
-Projede yer alan temel bloklar aşağıdaki gibidir:
+- **Power**
+  - 12 V input
+  - 5 V regulation
+  - 3.3 V regulation
+  - Filtering and bypass capacitors
 
-- **Güç Katı**
-  - 12V giriş
-  - 5V regülasyon
-  - 3.3V regülasyon
-  - Filtreleme ve bypass kapasitörleri
+- **Microcontroller**
+  - ESP32-WROOM-32 module
+  - UART header
+  - Boot and enable buttons
+  - Required pull-up and pull-down connections
 
-- **Mikrodenetleyici Katı**
-  - ESP32-WROOM-32 modülü
-  - UART başlığı
-  - Boot ve enable butonları
-  - Gerekli pull-up / pull-down bağlantıları
+- **RFID Interface**
+  - RFID module connection
+  - SPI communication lines
+  - 3.3 V supply
 
-- **RFID Arabirimi**
-  - RFID modülü bağlantısı
-  - SPI haberleşme hatları
-  - 3.3V besleme altyapısı
+- **LCD Interface**
+  - I2C-connected LCD
+  - PCF8574-based interface representation
+  - Text feedback for the user
 
-- **LCD Ekran Arabirimi**
-  - I2C haberleşmeli LCD yapı
-  - PCF8574 tabanlı arayüz temsili
-  - Kullanıcıya metin tabanlı bilgi gösterimi
+- **Relay Driver**
+  - Relay control output
+  - NPN transistor driver
+  - Protection diode
+  - External-load switching
 
-- **Röle Sürme Devresi**
-  - Röle kontrol çıkışı
-  - NPN transistör ile sürme yapısı
-  - Koruma diyodu
-  - Harici yük anahtarlama altyapısı
+- **Notifications**
+  - Buzzer driver
+  - LED indicator output
+  - Visual and audible feedback
 
-- **Bildirim Katı**
-  - Buzzer sürme devresi
-  - LED uyarı çıkışı
-  - Görsel ve sesli geri bildirim
+## Project Goals
 
-## Projenin Amacı
+- Design ESP32-based hardware
+- Integrate an RFID module
+- Design the power stage
+- Build a relay driver circuit
+- Connect an I2C LCD
+- Design notification circuits
+- Organize a multi-block embedded-system architecture
 
-Bu projenin temel amacı, aşağıdaki konularda uygulamalı deneyim kazanmaktır:
-
-- ESP32 tabanlı donanım tasarımı
-- RFID modülü entegrasyonu
-- Güç katı tasarımı
-- Röle sürme devresi oluşturma
-- I2C tabanlı LCD ekran bağlantısı
-- Uyarı ve bildirim devrelerinin tasarlanması
-- Çok bloklu gömülü sistem mimarisinin oluşturulması
-
-## Kullanılan Teknolojiler ve Bileşenler
+## Technologies and Components
 
 - ESP32-WROOM-32
-- RFID okuyucu modülü
-- I2C LCD ekran altyapısı
-- Röle
-- 2N2222 transistör
+- RFID reader module
+- I2C LCD interface
+- Relay
+- 2N2222 transistor
 - Buzzer
-- LED bildirim devresi
-- 5V ve 3.3V regülatör yapıları
-- Şematik ve PCB tasarım araçları
+- LED indicator circuit
+- 5 V and 3.3 V regulation
+- Schematic and PCB design tools
 
-## Teknik İçerik
+## Technical Focus
 
-Bu proje kapsamında aşağıdaki teknik başlıklara odaklanılmıştır:
+- Creating multiple supply rails from a 12 V input
+- Designing suitable power and peripheral connections for the ESP32
+- Connecting RFID communication lines to the microcontroller
+- Integrating the I2C display interface
+- Using a transistor and protection diode in the relay driver
+- Providing user notifications through a buzzer and LED
+- Organizing the schematic into modular functional blocks
 
-- 12V girişten çoklu besleme hattı oluşturulması
-- ESP32 için uygun besleme ve çevresel bağlantıların tasarlanması
-- RFID haberleşme hatlarının mikrodenetleyiciye bağlanması
-- I2C ekran arayüzünün sisteme entegre edilmesi
-- Röle sürme devresinde transistör ve koruma diyodu kullanımı
-- Buzzer ve LED ile kullanıcı bildirim altyapısı oluşturulması
-- Modüler blok yapıda şematik organizasyonu
+## Potential Applications
 
-## Uygulama Alanları
+- Card-entry systems
+- Smart locks
+- Authorization and access control
+- Embedded automation
+- RFID-based user verification
 
-Bu tasarım aşağıdaki sistemlerde kullanılabilecek altyapıya sahiptir:
+## Project Images
 
-- Kartlı geçiş sistemleri
-- Akıllı kilit sistemleri
-- Yetkilendirme ve erişim kontrol uygulamaları
-- Gömülü otomasyon sistemleri
-- RFID tabanlı kullanıcı doğrulama projeleri
+![Main schematic](schematic-easyEDA1.png)
 
-## Proje Görselleri
+![Schematic detail](schematic-easyEDA2.png)
 
-![Ana Şematik](schematic-easyEDA1.png)
+![3D RFID board view](3D-view-rfid.jpeg)
 
-![Ana Şematik](schematic-easyEDA2.png)
+## Possible Extensions
 
-![RFID Okuyucu Kartı](3D-view-rfid.jpeg)
+- Complete the PCB layout and prepare it for manufacturing
+- Design an enclosure
+- Add an authorized-card database
+- Add remote management over Wi-Fi or Bluetooth
+- Add event logging
+- Integrate an electric or magnetic door lock
+- Add a real-time clock (RTC)
+- Add a mobile app or web interface
 
-## Geliştirme Potansiyeli
+## Summary
 
-Proje aşağıdaki yönlerden geliştirilebilir:
-
-- PCB tasarımının tamamlanması ve üretime hazırlanması
-- Harici muhafaza tasarımı
-- Yetkili / yetkisiz kart veritabanı yapısının eklenmesi
-- Wi-Fi veya Bluetooth tabanlı uzaktan yönetim
-- Log kaydı tutma
-- Kapı kilidi veya manyetik kilit entegrasyonu
-- Gerçek zaman saati (RTC) eklenmesi
-- Mobil uygulama veya web arayüzü ile kontrol
-
-## Sonuç
-
-Bu proje, RFID tabanlı kontrol sistemleri için gerekli temel donanım bloklarını bir araya getiren, modüler yapıda geliştirilmiş bir gömülü sistem tasarımıdır. Güç elektroniği, mikrodenetleyici bağlantıları, haberleşme arayüzleri, kullanıcı bildirim elemanları ve röle kontrolü gibi farklı alt sistemleri tek bir yapı içinde birleştirmesi açısından kapsamlı bir uygulama çalışmasıdır.
+This modular embedded-system design combines the main hardware blocks required for RFID-based control. It brings power electronics, microcontroller connections, communication interfaces, user notifications, and relay control together in one design.
